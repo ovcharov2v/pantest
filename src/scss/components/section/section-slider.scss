@@ -1,0 +1,35 @@
+.section-slider {
+	padding-top: 71px;
+	padding-bottom: 30px;
+	overflow: hidden;
+
+	@media (min-width: $breakpoint-desktop-small) {
+		padding-top: 86px;
+		padding-bottom: 30px;
+	}
+
+	@media (min-width: $breakpoint-desktop-large) {
+		padding-top: 83px;
+		padding-bottom: 30px;
+	}
+
+	&__slider-col {
+		grid-column: 2 / 12;
+
+		@media (min-width: $breakpoint-desktop-large) {
+			grid-column: 2 / 13;
+		}
+	}
+
+	&__title {
+		margin-bottom: 31px;
+
+		@media (min-width: $breakpoint-desktop-small) {
+			margin-bottom: 40px;
+		}
+
+		@media (min-width: $breakpoint-desktop-large) {
+			margin-bottom: 53px;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.collapsed-text {
+	&__hidden { // .collapsed-text__hidden
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height $default-transition;
+
+		.collapsed-text--full & {
+			max-height: 100%;
+		}
+	}
+	&__button-box { // .collapsed-text__button-box
+		padding-top: 26px;
+
+		@media (min-width: $breakpoint-desktop-small) {
+			padding-top: 27px;
+		}
+
+		@media (min-width: $breakpoint-desktop-large) {
+			padding-top: 29px;
+		}
+	}
+
+	&__more-btn { // .collapsed-text__more-btn
+		display: flex;
+		align-items: center;
+		padding: 0;
+		border-width: 0;
+		background-color: $color-transparent;
+		color: $color-gray-light;
+
+		&::after {
+			display: block;
+			width: 14px;
+			height: 7px;
+			margin-left: 9px;
+			background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.10913 4.42065L4.05459 1.42065L1.00004 4.42065' stroke='%238F95AC' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+			background-size: 14px 7px;
+			background-repeat: no-repeat;
+			background-position: center;
+			content: "";
+			transform: translateY(1px) rotate(-180deg);
+			transition: transform $default-transition;
+
+			.collapsed-text--full & {
+				transform: translateY(1px);
+			}
+		}
+	}
+}

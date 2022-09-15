@@ -1,0 +1,100 @@
+.nav {
+	margin-top: 4px;
+
+	&__list { // .nav__list
+		display: flex;
+
+		@media (min-width: $breakpoint-desktop-small) {
+			margin: 0 -20px;
+		}
+
+		@media (min-width: $breakpoint-desktop-large) {
+			margin: 0 -30px;
+		}
+	}
+
+	&__elem { // .nav__elem
+		position: relative;
+		border-radius: 40px;
+		transition: background-color $default-transition;
+
+		@media (min-width: $breakpoint-desktop-small) {
+			margin: 0 20px;
+		}
+
+		@media (min-width: $breakpoint-desktop-large) {
+			margin: 0 30px;
+		}
+
+		&:hover {
+			background-color: rgba($color-gray-light, .2);
+		}
+
+		&--dropdown { // .nav__elem--dropdown
+			&:hover {
+				background-color: $color-red;
+			}
+		}
+
+		&--active { // .nav__elem--active
+			 background-color: $color-red;
+		}
+	}
+
+	&__link { // .nav__link
+		display: flex;
+		align-items: center;
+		padding: 9px 19px;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.02em;
+		white-space: nowrap;
+
+		@media (min-width: $breakpoint-desktop-small) {
+			padding: 12px 22px;
+		}
+
+		@media (min-width: $breakpoint-desktop-large) {
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		.nav__elem--dropdown & {
+			&::after {
+				display: block;
+				width: 12px;
+				height: 6px;
+				margin-left: 2px;
+				background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.10913 4.42065L4.05459 1.42065L1.00004 4.42065' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+				background-size: 12px 6px;
+				background-repeat: no-repeat;
+				background-position: center;
+				content: "";
+				transform: translate(10px, -1px) rotate(-180deg);
+				transition: transform $default-transition;
+
+				@media (min-width: $breakpoint-desktop-small) {
+					margin-left: 5px;
+				}
+			}
+		}
+
+		.nav__elem--dropdown:hover & {
+			&::after {
+				transform: translate(10px, -1px) rotate(0);
+			}
+		}
+	}
+
+	&__dropdown-menu { // .nav__dropdown-menu
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: -12px;
+		padding-top: 25px;
+
+		.nav__elem--dropdown:hover & {
+			display: block;
+		}
+	}
+}

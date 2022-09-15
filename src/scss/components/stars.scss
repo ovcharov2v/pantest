@@ -1,0 +1,26 @@
+.stars {
+	display: grid;
+	grid-template-columns: repeat(5, 13px);
+	grid-template-rows: auto;
+	grid-gap: 10px;
+
+	@media (min-width: $breakpoint-desktop-small) {
+		grid-template-columns: repeat(5, 22px);
+		grid-gap: 7px;
+	}
+
+	&__star { // .stars__star
+		width: 13px;
+		height: 13px;
+		fill: $color-white;
+
+		@media (min-width: $breakpoint-desktop-small) {
+			width: 19px;
+			height: 19px;
+		}
+
+		&--red { // .stars__star--red
+			fill: $color-red;
+		}
+	}
+}

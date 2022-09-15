@@ -1,0 +1,74 @@
+.select {
+	position: relative;
+	z-index: 10;
+
+	&__field-box { // .select__field-box
+		position: relative;
+
+		&::after {
+			position: absolute;
+			top: 28px;
+			right: 15px;
+			width: 12px;
+			height: 6px;
+			background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.10913 4.42065L4.05459 1.42065L1.00004 4.42065' stroke='%23fff' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+			background-size: 12px 6px;
+			background-repeat: no-repeat;
+			background-position: center;
+			content: "";
+			pointer-events: none;
+			cursor: pointer;
+			transform: rotate(-180deg);
+			transition: transform $default-transition;
+
+			@media (min-width: $breakpoint-desktop-small) {
+				right: 21px;
+			}
+
+			.select--opened & {
+				transform: rotate(0);
+			}
+		}
+	}
+
+	&__field { // .select__field
+		cursor: pointer;
+
+		.select--opened & {
+			border-radius: 4px 4px 0 0;
+		}
+	}
+
+	&__dropdown { // .select__dropdown
+		position: absolute;
+		z-index: 1;
+		top: 100%;
+		left: 0;
+		display: none;
+		width: 100%;
+
+		.select--opened & {
+			display: block;
+		}
+	}
+
+	&__list { // .select__list
+		padding: 11px 8px 15px;
+		background-color: $color-black-dark;
+		border: 1px solid $color-gray-light;
+		border-top-width: 0;
+		border-radius: 0 0 4px 4px;
+		transition: max-height $default-transition;
+	}
+
+	&__list-elem { // .select__list-elem
+		padding: 9px 18px;
+		border-radius: 3px;
+		cursor: pointer;
+		transition: background-color $default-transition;
+
+		&:hover {
+			background-color: rgba($color-gray-light, .1);
+		}
+	}
+}

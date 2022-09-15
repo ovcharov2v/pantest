@@ -1,0 +1,45 @@
+.map-marker {
+	position: absolute;
+	top: -203px;
+	left: 0;
+	width: 247px;
+	margin-bottom: 34px;
+	padding: 25px 37px 25px 18px;
+	background-color: $color-white;
+	border-radius: 5px;
+	box-shadow: 0 4px 20px rgba($color-gray-light, .2);
+
+	@media (min-width: $breakpoint-desktop-small) {
+		top: -228px;
+		width: 310px;
+		padding: 42px 51px 32px;
+	}
+
+	@media (min-width: $breakpoint-desktop-large) {
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -34px;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 39px 39px 0 0;
+		border-color: $color-white transparent transparent transparent;
+		content: "";
+	}
+
+	&__title { // .map-marker__title
+		margin-bottom: 14px;
+	}
+
+	&__addr { // .map-marker__addr
+		margin-bottom: 14px;
+	}
+
+	&__link { // .map-marker__link
+		display: inline-block;
+		padding-bottom: 0px;
+	}
+}

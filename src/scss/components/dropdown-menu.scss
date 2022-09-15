@@ -1,0 +1,43 @@
+.dropdown-menu {
+	&__list { // .dropdown-menu__list
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		grid-column-gap: 10px;
+		width: 535px;
+		padding: 0 21px 0 31px;
+		background-color: $color-black-light;
+		border-radius: 9px;
+	}
+
+	&__elem { // .dropdown-menu__elem
+		padding-top: 23px;
+		padding-bottom: 23px;
+	}
+
+	&__link { // .dropdown-menu__link
+		display: flex;
+	}
+
+	&__icon-box { // .dropdown-menu__icon-box
+		margin-right: 12px;
+		padding-top: 3px
+	}
+	&__icon { // .dropdown-menu__icon
+		width: 24px;
+		height: 16px;
+	}
+
+	&__link-content { // .dropdown-menu__link-content
+	}
+
+	&__title { // .dropdown-menu__title
+		margin-bottom: 6px;
+	}
+
+	&__devider { // .dropdown-menu__devider
+		grid-column: 1 / 3;
+		width: 100%;
+		height: 1px;
+		box-shadow: 0 -0.5px 0.5px $color-gray-light;
+	}
+}
