@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="PAN test">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:title" content="PAN test">
+		<meta property="og:description" content="PAN test">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="PAN test">
+		<meta name="twitter:description" content="PAN test">
+		<title>PAN test</title>
+		<link rel="stylesheet" href="./css/main.css?v=1663283757565">
+	</head>
+	<body>
+		<!-- Header-->
+		<header class="header">
+			<div class="container header__container"><a class="header__home-link" href="/" title="Home page">
+					<svg class="header__logo">
+						<use xlink:href="./images/sprites.svg#logo"></use>
+					</svg></a>
+				<nav class="header__menu nav">
+					<ul class="nav__list">
+						<li class="nav__elem nav__elem--dropdown"><a class="nav__link" href="#">Пункт 1</a>
+							<div class="nav__dropdown-menu dropdown-menu">
+								<div class="dropdown-menu__list">
+									<div class="dropdown-menu__elem"><a class="dropdown-menu__link" href="#">
+											<div class="dropdown-menu__icon-box">
+												<svg class="dropdown-menu__icon">
+													<use xlink:href="./images/sprites.svg#sofa"></use>
+												</svg>
+											</div>
+											<div class="dropdown-menu__link-content">
+												<p class="text-h5 dropdown-menu__title">Меню 1</p>
+												<p class="text text-gray">Покупайте и продавайте</p>
+											</div></a></div>
+									<div class="dropdown-menu__elem"><a class="dropdown-menu__link" href="#">
+											<div class="dropdown-menu__icon-box">
+												<svg class="dropdown-menu__icon">
+													<use xlink:href="./images/sprites.svg#sofa"></use>
+												</svg>
+											</div>
+											<div class="dropdown-menu__link-content">
+												<p class="text-h5 dropdown-menu__title">Меню 2</p>
+												<p class="text text-gray">Давайте подружимся</p>
+											</div></a></div>
+									<div class="dropdown-menu__devider"></div>
+									<div class="dropdown-menu__elem"><a class="dropdown-menu__link" href="#">
+											<div class="dropdown-menu__icon-box">
+												<svg class="dropdown-menu__icon">
+													<use xlink:href="./images/sprites.svg#sofa"></use>
+												</svg>
+											</div>
+											<div class="dropdown-menu__link-content">
+												<p class="text-h5 dropdown-menu__title">Меню 1</p>
+												<p class="text text-gray">Покупайте и продавайте</p>
+											</div></a></div>
+									<div class="dropdown-menu__elem"><a class="dropdown-menu__link" href="#">
+											<div class="dropdown-menu__icon-box">
+												<svg class="dropdown-menu__icon">
+													<use xlink:href="./images/sprites.svg#sofa"></use>
+												</svg>
+											</div>
+											<div class="dropdown-menu__link-content">
+												<p class="text-h5 dropdown-menu__title">Меню 2</p>
+												<p class="text text-gray">Давайте подружимся</p>
+											</div></a></div>
+								</div>
+							</div>
+						</li>
+						<li class="nav__elem"><a class="nav__link" href="#">Пункт 2</a></li>
+						<li class="nav__elem"><a class="nav__link" href="#">Пункт 3</a></li>
+						<li class="nav__elem"><a class="nav__link" href="#">Пункт 4</a></li>
+						<li class="nav__elem"><a class="nav__link" href="#">Пункт 5</a></li>
+					</ul>
+				</nav>
+				<button class="button button--small header__button" type="button">Кнопка</button>
+			</div>
+		</header>
+		<main>
+			<!-- Section Hero-->
+			<section class="section-hero">
+				<div class="container">
+					<div class="row">
+						<div class="section-hero__col-form">
+							<h1 class="text-h1 section-hero__title">Недвижимость Санкт-Петербурга и Москвы</h1>
+							<form class="section-hero__form">
+								<div class="section-hero__input-row">
+									<div class="input select">
+										<label class="input__label" for="city">Выбрать город</label>
+										<div class="select__field-box">
+											<input class="input__field select__field" id="city" type="text" placeholder="Выбрать город" readonly>
+										</div>
+										<div class="select__dropdown">
+											<ul class="select__list text">
+												<li class="select__list-elem">Москва</li>
+												<li class="select__list-elem">Санкт-Петербург</li>
+												<li class="select__list-elem">Владивосток</li>
+												<li class="select__list-elem">Оренбург</li>
+											</ul>
+										</div>
+									</div>
+									<div class="input">
+										<label class="input__label" for="email">Ваш e-mail</label>
+										<input class="input__field" id="email" type="email" placeholder="info@mail.ru">
+									</div>
+								</div>
+								<button class="button section-hero__submit-btn" type="submit">Кнопка действия</button>
+								<div class="checkbox">
+									<input class="checkbox__field" type="checkbox" id="agree">
+									<label class="checkbox__label text text-gray" for="agree">Отправляя нам данную форму вы соглашаетесь с&nbsp<br class="checkbox__politics-break"><a class="text-red checkbox__label-link" href="#" target="_blank">политикой конфиденциальности</a></label>
+								</div>
+							</form>
+						</div>
+						<div class="section-hero__col-image"><img class="section-hero__image" src="images/hero-illustration.svg" alt="Woman is working"></div>
+					</div>
+				</div>
+			</section>
+			<!-- Section Slider-->
+			<section class="section-slider">
+				<div class="container">
+					<div class="row">
+						<div class="center-col">
+							<h2 class="text-h1 text-center section-slider__title">Обычный слайдер</h2>
+						</div>
+					</div>
+					<div class="row slider">
+						<div class="section-slider__slider-col slider__wrapper">
+							<div class="slider__slider swiper slider__box">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide slider__slide">
+										<picture>
+											<source srcset="images/slide1@1x.webp 1x, images/slide1@2x.webp 2x" type="image/webp"><img class="slider__bg" src="images/slide1@1x.png" srcset="slide1@2x.png 2x" alt="Building">
+										</picture>
+										<div class="stars slider__stars">
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="swiper-slide slider__slide">
+										<picture>
+											<source srcset="images/slide2@1x.webp 1x, images/slide2@2x.webp 2x" type="image/webp"><img class="slider__bg" src="images/slide2@1x.png" srcset="slide2@2x.png 2x" alt="Building">
+										</picture>
+										<div class="stars slider__stars">
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="swiper-slide slider__slide">
+										<picture>
+											<source srcset="images/slide3@1x.webp 1x, images/slide3@2x.webp 2x" type="image/webp"><img class="slider__bg" src="images/slide3@1x.png" srcset="slide3@2x.png 2x" alt="Building">
+										</picture>
+										<div class="stars slider__stars">
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="swiper-slide slider__slide">
+										<picture>
+											<source srcset="images/slide2@1x.webp 1x, images/slide2@2x.webp 2x" type="image/webp"><img class="slider__bg" src="images/slide2@1x.png" srcset="slide2@2x.png 2x" alt="Building">
+										</picture>
+										<div class="stars slider__stars">
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="swiper-slide slider__slide">
+										<picture>
+											<source srcset="images/slide3@1x.webp 1x, images/slide3@2x.webp 2x" type="image/webp"><img class="slider__bg" src="images/slide3@1x.png" srcset="slide3@2x.png 2x" alt="Building">
+										</picture>
+										<div class="stars slider__stars">
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star stars__star--red">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+											<svg class="stars__star">
+												<use xlink:href="./images/sprites.svg#star"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider__navigation">
+								<button class="slider__nav-button slider__nav-button--prev" type="button" aria-label="Prev slide"></button>
+								<button class="slider__nav-button slider__nav-button--next" type="button" aria-label="Next slide"></button>
+							</div>
+						</div>
+						<div class="center-col">
+							<div class="slider__pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Section Progress-->
+			<section class="section-progress container">
+				<div class="row">
+					<div class="section-progress__progress-col">
+						<div class="progress-bar section-progress__progress"><span class="progress-bar__progress js-progress-value">5 %</span></div>
+						<div class="section-progress__action-box">
+							<button class="button js-progress-set-value" type="button">+ 45 %</button>
+							<p class="text">При нажатии на кнопку прогрессбар заполняется на столько процентов, сколько указано на кнопке</p>
+						</div>
+					</div>
+					<div class="section-progress__text-col collapsed-text js-collapsed">
+						<p class="text-big">Большинство онкологических пациентов испытывают страх перед неизвестностью того, что их ожидает в процессе лечения рака.</p>
+						<div class="collapsed-text__hidden">
+							<p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur cumque deserunt distinctio, dolor ducimus eius exercitationem facilis ipsum officia pariatur possimus provident quod.</p>
+						</div>
+						<div class="collapsed-text__button-box">
+							<button class="text collapsed-text__more-btn js-collapsed-more-btn" type="button" data-title="Скрыть подробности">Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Section Map-->
+			<section class="section-map container">
+				<div class="row">
+					<div class="center-col section-map__map" id="map"></div>
+				</div>
+				<div class="section-map__marker-box">
+					<!-- Marker layout-->
+					<div class="map-marker">
+						<p class="text-h5 map-marker__title">Наш адрес</p>
+						<p class="text map-marker__addr">Санкт-Петербург, Владимирский проспект, 23, лит. А, офис 701</p><a class="text text-red text-underline map-marker__link" href="#">Схема проезда</a>
+					</div>
+				</div>
+			</section>
+			<!-- Section Advantages-->
+			<section class="section-advantages container">
+				<div class="row">
+					<div class="center-col">
+						<ul class="section-advantages__list">
+							<li class="section-advantages__item"><strong class="text-h2 section-advantages__value">3,000</strong><span class="text-big">Агенств</span></li>
+							<li class="section-advantages__item"><strong class="text-h2 section-advantages__value">10,000</strong><span class="text-big">Партнеров</span></li>
+							<li class="section-advantages__item"><strong class="text-h2 section-advantages__value">80,000</strong><span class="text-big">Квартир в базе</span></li>
+							<li class="section-advantages__item"><strong class="text-h2 section-advantages__value">100+</strong><span class="text-big">Застройщиков</span></li>
+							<li class="section-advantages__item"><strong class="text-h2 section-advantages__value">200</strong><span class="text-big">Сотрудников</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer-->
+		<footer class="footer container">
+			<div class="row">
+				<div class="center-col footer__col">
+					<div class="to-top footer__to-top">
+						<p class="to-top__label">Наверх</p>
+						<button class="to-top__button js-to-top" type="button" aria-label="To top"></button>
+					</div>
+					<div class="row">
+						<div class="footer__addr-col">
+							<address class="text">Санкт-Петербург, Владимирский пр., д. 3<br>лит. А, офис 701</address>
+						</div>
+						<div class="footer__phone-col text-center"><a class="text-h3" href="tel:88124456809">+ 7 (812) 445-68-09</a></div>
+						<div class="footer__mailto-col text-right"><a class="text text-red text-underline" href="mailto:somemail@mail.com">Напишите нам</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=958dfd93-b0bd-4c33-8de4-aee3cdf4995c" type="text/javascript"></script>
+		<script>
+			if (!('IntersectionObserver' in window)) {
+				var script = document.createElement("script");
+				script.src = "https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js";
+				document.getElementsByTagName('head')[0].appendChild(script);
+			}
+		</script>
+		<script src="./js/vendor.js?v=1663283757567"></script>
+		<script src="./js/main.js?v=1663283757567"></script>
+	</body>
+</html>

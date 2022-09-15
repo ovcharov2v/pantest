@@ -1,7 +1,0 @@
-mixin stars(numberOfRed)
-	- var n = 0;
-	.stars&attributes(attributes)
-		while n < 5
-			+svg("star")(class="stars__star"+(n<numberOfRed?' stars__star--red':''))
-			- n++
-
